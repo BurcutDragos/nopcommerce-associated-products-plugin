@@ -4,7 +4,7 @@ A nopCommerce widget plugin that displays a curated list of associated products 
 
 ---
 
-## Features
+## 📱 Features
 
 - **Admin card on product edit page** — manage associated products directly from the product editing page in the admin panel
 - **Product search popup** — search and select products to associate using filters (category, manufacturer, store, vendor, product type)
@@ -16,7 +16,7 @@ A nopCommerce widget plugin that displays a curated list of associated products 
 
 ---
 
-## Requirements
+## ✅ Requirements
 
 | Requirement | Version |
 |---|---|
@@ -26,7 +26,7 @@ A nopCommerce widget plugin that displays a curated list of associated products 
 
 ---
 
-## Installation
+## 🚀 Installation
 
 1. Clone or download this repository
 2. Copy the plugin folder into `src/Plugins/` inside your nopCommerce source
@@ -38,7 +38,7 @@ A nopCommerce widget plugin that displays a curated list of associated products 
 
 ---
 
-## Configuration
+## 🚀 Configuration
 
 ### Plugin settings
 Go to **Admin → Configuration → Plugins → Widgets.AssociatedProducts → Configure**
@@ -59,7 +59,7 @@ This setting supports per-store overrides in multi-store installations.
 
 ---
 
-## How It Works
+## 🚀 How It Works
 
 ```
 Admin sets associations
@@ -79,7 +79,7 @@ Widget appears at the bottom of the product page
 
 ---
 
-## Project Structure
+## ✅ Project Structure
 
 ```
 Nop.Plugin.Widgets.AssociatedProducts/
@@ -122,7 +122,7 @@ Nop.Plugin.Widgets.AssociatedProducts/
 
 ---
 
-## Widget Zones
+## 📱 Widget Zones
 
 | Zone | Constant | Location |
 |---|---|---|
@@ -131,7 +131,7 @@ Nop.Plugin.Widgets.AssociatedProducts/
 
 ---
 
-## Database
+## 📱 Database
 
 The plugin creates a single table on installation:
 
@@ -146,8 +146,18 @@ The plugin creates a single table on installation:
 
 The table is automatically removed when the plugin is uninstalled.
 
----
+## 🤝 Contributing:
+1. Fork the repository.
+2. Create a new branch: `git checkout -b my-feature-branch`
+3. Make your changes and commit them: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin my-feature-branch`
+5. Submit a pull request.
 
-## License
+## 🧑‍💻 Author(s):
+Burcut Ioan Dragos.
 
+## 💡 Acknowledgments:
+Thanks to Anthropic (Claude AI) for providing assistance in the development of this project.
+
+## 📄 License
 This project is licensed under the terms found in the [LICENSE](LICENSE) file.
