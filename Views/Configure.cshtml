@@ -1,0 +1,47 @@
+@model ConfigurationModel
+
+@{
+    Layout = "_ConfigurePlugin";
+}
+
+@await Component.InvokeAsync(typeof(StoreScopeConfigurationViewComponent))
+
+<form asp-controller="AssociatedProducts" asp-action="Configure" method="post">
+    <div asp-validation-summary="All"></div>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="cards-group">
+
+                <div class="card card-default">
+                    <div class="card-header">
+                        @T("Admin.Configuration.Settings")
+                    </div>
+                    <div class="card-body">
+
+                        <div class="form-group row">
+                            <div class="col-md-3">
+                                <nop-override-store-checkbox asp-for="NumberOfProductsToDisplay_OverrideForStore"
+                                                             asp-input="NumberOfProductsToDisplay"
+                                                             asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                                <nop-label asp-for="NumberOfProductsToDisplay" />
+                            </div>
+                            <div class="col-md-9">
+                                <nop-editor asp-for="NumberOfProductsToDisplay" />
+                                <span asp-validation-for="NumberOfProductsToDisplay"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <button type="submit" name="save" class="btn btn-primary">
+                            <i class="far fa-floppy-disk"></i>
+                            @T("Admin.Common.Save")
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</form>

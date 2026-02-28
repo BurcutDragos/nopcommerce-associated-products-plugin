@@ -1,0 +1,11 @@
+{
+  "Group": "Widgets",
+  "FriendlyName": "Associated Products Widget",
+  "SystemName": "Widgets.AssociatedProducts",
+  "Version": "1.00",
+  "SupportedVersions": [ "5.00" ],
+  "Author": "nopCommerce team",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Widgets.AssociatedProducts.dll",
+  "Description": "Displays a configurable collection of associated products on the product detail page. Associations are managed from the product editing page in the admin area."
+}

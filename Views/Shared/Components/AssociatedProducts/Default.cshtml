@@ -1,0 +1,18 @@
+@model IList<ProductOverviewModel>
+
+@if (Model != null && Model.Count > 0)
+{
+    <section class="associated-products-grid product-grid">
+        <h2 class="title">
+            <strong>@T("Plugins.Widgets.AssociatedProducts.Public.Title")</strong>
+        </h2>
+        <div class="item-grid">
+            @foreach (var item in Model)
+            {
+                <div class="item-box">
+                    @await Html.PartialAsync("_ProductBox", item)
+                </div>
+            }
+        </div>
+    </section>
+}
